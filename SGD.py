@@ -17,7 +17,7 @@ if __name__ == "__main__":
     theta = np.random.randn(13)
     b = np.random.randn(1)
 
-    lr = 1e-3
+    lr = 1e-4
     EPOCHES = 100
     L = X_train.shape[0]
 
