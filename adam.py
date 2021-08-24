@@ -17,8 +17,8 @@ if __name__ == "__main__":
     theta = np.random.randn(13)
     b = np.random.randn(1)
 
-    lr = 1e-1
-    EPOCHES = 1000
+    lr = .1
+    EPOCHES = 100
     epsilon = 1e-8
     beta1 = 0.9
     beta2 = 0.999

@@ -17,8 +17,8 @@ if __name__ == "__main__":
     theta = np.random.randn(13)
     b = np.random.randn(1)
 
-    lr = 0.1
-    EPOCHES = 1000
+    lr = 1.
+    EPOCHES = 100
     epsilon = 1e-8
     G_theta = np.zeros(X_train.shape[1]) + epsilon
     G_b = np.zeros(1) + epsilon

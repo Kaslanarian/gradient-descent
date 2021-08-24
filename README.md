@@ -25,3 +25,25 @@ BGD（批梯度下降）、SGD（随机梯度下降）和Mini-batchGD（小批�
 在`mini-batchGD.py`中，按7:3划分训练集和测试集，将数据以64条为单位进行划分，以0.001的学习率对训练集进行100轮迭代，并绘制训练误差-轮次曲线：
 
 ![min-batch](src/mini-batchGD.png)
+
+## 梯度下降优化算法
+
+### 动量机制
+
+![momentum](src/momentum.png)
+
+### Nesterov
+
+![nestrov](src/nestrov.png)
+
+### Adagrad
+
+![adagrad](src/adagrad.png)
+
+### Adadelta
+
+![adadelta](src/adadelta.png)
+
+### Adam
+
+![adam](src/adam.png)
