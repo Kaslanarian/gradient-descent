@@ -31,7 +31,7 @@ if __name__ == "__main__":
         grad_theta = 2 * X_train.T @ f
         grad_b = f.mean()
 
-        G_theta += (1 - gamma) * grad_theta**2 + gamma * G_theta
+        G_theta = (1 - gamma) * grad_theta**2 + gamma * G_theta
         G_b += (1 - gamma) * grad_b**2 + gamma * G_b
 
         theta -= lr / (np.sqrt(G_theta) + epsilon) * grad_theta
