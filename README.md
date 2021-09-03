@@ -8,23 +8,13 @@
 
 BGD（批梯度下降）、SGD（随机梯度下降）和Mini-batchGD（小批梯度下降）。
 
-### BGD
+SGD算法，不同学习率下的下降效果：
 
-在`BGD.py`中，按7:3划分训练集和测试集，以0.0001的学习率对训练集进行100轮迭代，并绘制训练误差-轮次和测试误差-轮次曲线：
+![lr](src/lr.png)
 
-![bgd](src/BGD.png)
+控制相同的学习率5e-5，对于相同的参数初始点和数据进行三种梯度下降：
 
-### SGD
-
-在`SGD.py`中，按7:3划分训练集和测试集，以0.001的学习率对训练集进行100轮迭代，并绘制训练误差-轮次曲线：
-
-![sgd](src/SGD.png)
-
-### mini-batch GD
-
-在`mini-batchGD.py`中，按7:3划分训练集和测试集，将数据以64条为单位进行划分，以0.001的学习率对训练集进行100轮迭代，并绘制训练误差-轮次曲线：
-
-![min-batch](src/mini-batchGD.png)
+![3gd](src/3gd.png)
 
 ## 梯度下降优化算法
 
@@ -36,14 +26,16 @@ BGD（批梯度下降）、SGD（随机梯度下降）和Mini-batchGD（小批�
 
 ![nestrov](src/nestrov.png)
 
-### Adagrad
+### 动量机制的加入对梯度下降的影响
 
-![adagrad](src/adagrad.png)
+控制学习率相同（1e-4）：
 
-### Adadelta
+![5gd](src/5gd.png)
 
-![adadelta](src/adadelta.png)
+### Adagrad, Adadelta和Adam
 
-### Adam
+![ada](src/ada.jpg)
 
-![adam](src/adam.png)
+## 总览
+
+![overview](src/overview.png)
